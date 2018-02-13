@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0A69AFEE09546906567131 /* Pods_FlashCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F544856D1F104214DA9D5C /* Pods_FlashCards.framework */; };
+		813923EA2033A1840044DCD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813923E92033A1840044DCD6 /* AppDelegate.swift */; };
+		813923EC2033A1840044DCD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813923EB2033A1840044DCD6 /* ViewController.swift */; };
+		813923EF2033A1840044DCD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813923ED2033A1840044DCD6 /* Main.storyboard */; };
+		813923F22033A1840044DCD6 /* FlashCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 813923F02033A1840044DCD6 /* FlashCards.xcdatamodeld */; };
+		813923F42033A1840044DCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813923F32033A1840044DCD6 /* Assets.xcassets */; };
+		813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813923F52033A1840044DCD6 /* LaunchScreen.storyboard */; };
+		813924022033A1840044DCD6 /* FlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813924012033A1840044DCD6 /* FlashCardsTests.swift */; };
+		8139240D2033A1840044DCD6 /* FlashCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */; };
+		9D8F82A363C5153676C20FDC /* Pods_FlashCardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5EB4B9EA102C8F82DBC393 /* Pods_FlashCardsTests.framework */; };
+		B23DCF7F51C44CCFA8C347A6 /* Pods_FlashCardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0837B7B0E1882919430CD7 /* Pods_FlashCardsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813923FE2033A1840044DCD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813923DE2033A1840044DCD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813923E52033A1840044DCD6;
+			remoteInfo = FlashCards;
+		};
+		813924092033A1840044DCD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813923DE2033A1840044DCD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813923E52033A1840044DCD6;
+			remoteInfo = FlashCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0837B7B0E1882919430CD7 /* Pods_FlashCardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFBCB0525B2CCF4A7395A41 /* Pods-FlashCardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsTests/Pods-FlashCardsTests.release.xcconfig"; sourceTree = "<group>"; };
+		56F544856D1F104214DA9D5C /* Pods_FlashCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813923E62033A1840044DCD6 /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813923E92033A1840044DCD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		813923EB2033A1840044DCD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		813923EE2033A1840044DCD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		813923F12033A1840044DCD6 /* FlashCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlashCards.xcdatamodel; sourceTree = "<group>"; };
+		813923F32033A1840044DCD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813923F62033A1840044DCD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		813923F82033A1840044DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813923FD2033A1840044DCD6 /* FlashCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813924012033A1840044DCD6 /* FlashCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsTests.swift; sourceTree = "<group>"; };
+		813924032033A1840044DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813924082033A1840044DCD6 /* FlashCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsUITests.swift; sourceTree = "<group>"; };
+		8139240E2033A1840044DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B416A003B4DB9207C9E2329 /* Pods-FlashCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards.debug.xcconfig"; sourceTree = "<group>"; };
+		921F9D4EDCFE6AFFB141FE02 /* Pods-FlashCardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8D8C7892A77411B010D839C /* Pods-FlashCardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC5EB4B9EA102C8F82DBC393 /* Pods_FlashCardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashCardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13D1D782B3456CD6801B471 /* Pods-FlashCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards.release.xcconfig"; sourceTree = "<group>"; };
+		F6C40C2B091AA7A562EEB9BC /* Pods-FlashCardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsTests/Pods-FlashCardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		813923E32033A1840044DCD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0A69AFEE09546906567131 /* Pods_FlashCards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813923FA2033A1840044DCD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8F82A363C5153676C20FDC /* Pods_FlashCardsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813924052033A1840044DCD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23DCF7F51C44CCFA8C347A6 /* Pods_FlashCardsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3259FAFA574C53CAC01CC0F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F544856D1F104214DA9D5C /* Pods_FlashCards.framework */,
+				CC5EB4B9EA102C8F82DBC393 /* Pods_FlashCardsTests.framework */,
+				1A0837B7B0E1882919430CD7 /* Pods_FlashCardsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1B7F3A6D11D8A191B4CB27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B416A003B4DB9207C9E2329 /* Pods-FlashCards.debug.xcconfig */,
+				E13D1D782B3456CD6801B471 /* Pods-FlashCards.release.xcconfig */,
+				F6C40C2B091AA7A562EEB9BC /* Pods-FlashCardsTests.debug.xcconfig */,
+				3CFBCB0525B2CCF4A7395A41 /* Pods-FlashCardsTests.release.xcconfig */,
+				921F9D4EDCFE6AFFB141FE02 /* Pods-FlashCardsUITests.debug.xcconfig */,
+				A8D8C7892A77411B010D839C /* Pods-FlashCardsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		813923DD2033A1840044DCD6 = {
+			isa = PBXGroup;
+			children = (
+				813923E82033A1840044DCD6 /* FlashCards */,
+				813924002033A1840044DCD6 /* FlashCardsTests */,
+				8139240B2033A1840044DCD6 /* FlashCardsUITests */,
+				813923E72033A1840044DCD6 /* Products */,
+				7A1B7F3A6D11D8A191B4CB27 /* Pods */,
+				3259FAFA574C53CAC01CC0F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		813923E72033A1840044DCD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				813923E62033A1840044DCD6 /* FlashCards.app */,
+				813923FD2033A1840044DCD6 /* FlashCardsTests.xctest */,
+				813924082033A1840044DCD6 /* FlashCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		813923E82033A1840044DCD6 /* FlashCards */ = {
+			isa = PBXGroup;
+			children = (
+				8139241F2033A1C80044DCD6 /* Services */,
+				8139241E2033A1C20044DCD6 /* Models */,
+				8139241B2033A1A40044DCD6 /* Supporting Files */,
+				8139241D2033A1B90044DCD6 /* Controllers */,
+				813923ED2033A1840044DCD6 /* Main.storyboard */,
+				813923F82033A1840044DCD6 /* Info.plist */,
+				813923F02033A1840044DCD6 /* FlashCards.xcdatamodeld */,
+			);
+			path = FlashCards;
+			sourceTree = "<group>";
+		};
+		813924002033A1840044DCD6 /* FlashCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				813924012033A1840044DCD6 /* FlashCardsTests.swift */,
+				813924032033A1840044DCD6 /* Info.plist */,
+			);
+			path = FlashCardsTests;
+			sourceTree = "<group>";
+		};
+		8139240B2033A1840044DCD6 /* FlashCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */,
+				8139240E2033A1840044DCD6 /* Info.plist */,
+			);
+			path = FlashCardsUITests;
+			sourceTree = "<group>";
+		};
+		8139241B2033A1A40044DCD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				813923E92033A1840044DCD6 /* AppDelegate.swift */,
+				813923F32033A1840044DCD6 /* Assets.xcassets */,
+				813923F52033A1840044DCD6 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8139241D2033A1B90044DCD6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				813923EB2033A1840044DCD6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8139241E2033A1C20044DCD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8139241F2033A1C80044DCD6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		813923E52033A1840044DCD6 /* FlashCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813924112033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCards" */;
+			buildPhases = (
+				E83FD38EDB50CA2247A35ECF /* [CP] Check Pods Manifest.lock */,
+				813923E22033A1840044DCD6 /* Sources */,
+				813923E32033A1840044DCD6 /* Frameworks */,
+				813923E42033A1840044DCD6 /* Resources */,
+				EBFFDFF9983C95BED7F2052E /* [CP] Embed Pods Frameworks */,
+				CDA43C7D94778ADF181A0BA0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashCards;
+			productName = FlashCards;
+			productReference = 813923E62033A1840044DCD6 /* FlashCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813923FC2033A1840044DCD6 /* FlashCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813924142033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCardsTests" */;
+			buildPhases = (
+				B5C778185AF8FDA23E342445 /* [CP] Check Pods Manifest.lock */,
+				813923F92033A1840044DCD6 /* Sources */,
+				813923FA2033A1840044DCD6 /* Frameworks */,
+				813923FB2033A1840044DCD6 /* Resources */,
+				D31D99FC54182C6EE370135D /* [CP] Embed Pods Frameworks */,
+				1822BD77A391839D5558AE65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813923FF2033A1840044DCD6 /* PBXTargetDependency */,
+			);
+			name = FlashCardsTests;
+			productName = FlashCardsTests;
+			productReference = 813923FD2033A1840044DCD6 /* FlashCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		813924072033A1840044DCD6 /* FlashCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813924172033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCardsUITests" */;
+			buildPhases = (
+				10A39877B89814EA12F8C794 /* [CP] Check Pods Manifest.lock */,
+				813924042033A1840044DCD6 /* Sources */,
+				813924052033A1840044DCD6 /* Frameworks */,
+				813924062033A1840044DCD6 /* Resources */,
+				1F6B71D7B752D6F35DD112A9 /* [CP] Embed Pods Frameworks */,
+				032D0DA9F229D2FD39ECC3B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8139240A2033A1840044DCD6 /* PBXTargetDependency */,
+			);
+			name = FlashCardsUITests;
+			productName = FlashCardsUITests;
+			productReference = 813924082033A1840044DCD6 /* FlashCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		813923DE2033A1840044DCD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = QI;
+				TargetAttributes = {
+					813923E52033A1840044DCD6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					813923FC2033A1840044DCD6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 813923E52033A1840044DCD6;
+					};
+					813924072033A1840044DCD6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 813923E52033A1840044DCD6;
+					};
+				};
+			};
+			buildConfigurationList = 813923E12033A1840044DCD6 /* Build configuration list for PBXProject "FlashCards" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 813923DD2033A1840044DCD6;
+			productRefGroup = 813923E72033A1840044DCD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				813923E52033A1840044DCD6 /* FlashCards */,
+				813923FC2033A1840044DCD6 /* FlashCardsTests */,
+				813924072033A1840044DCD6 /* FlashCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		813923E42033A1840044DCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */,
+				813923F42033A1840044DCD6 /* Assets.xcassets in Resources */,
+				813923EF2033A1840044DCD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813923FB2033A1840044DCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813924062033A1840044DCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032D0DA9F229D2FD39ECC3B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10A39877B89814EA12F8C794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashCardsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1822BD77A391839D5558AE65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCardsTests/Pods-FlashCardsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F6B71D7B752D6F35DD112A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C778185AF8FDA23E342445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashCardsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA43C7D94778ADF181A0BA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D31D99FC54182C6EE370135D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCardsTests/Pods-FlashCardsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E83FD38EDB50CA2247A35ECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBFFDFF9983C95BED7F2052E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		813923E22033A1840044DCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813923F22033A1840044DCD6 /* FlashCards.xcdatamodeld in Sources */,
+				813923EC2033A1840044DCD6 /* ViewController.swift in Sources */,
+				813923EA2033A1840044DCD6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813923F92033A1840044DCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813924022033A1840044DCD6 /* FlashCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813924042033A1840044DCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8139240D2033A1840044DCD6 /* FlashCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		813923FF2033A1840044DCD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813923E52033A1840044DCD6 /* FlashCards */;
+			targetProxy = 813923FE2033A1840044DCD6 /* PBXContainerItemProxy */;
+		};
+		8139240A2033A1840044DCD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813923E52033A1840044DCD6 /* FlashCards */;
+			targetProxy = 813924092033A1840044DCD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		813923ED2033A1840044DCD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813923EE2033A1840044DCD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		813923F52033A1840044DCD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813923F62033A1840044DCD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8139240F2033A1840044DCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		813924102033A1840044DCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		813924122033A1840044DCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B416A003B4DB9207C9E2329 /* Pods-FlashCards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		813924132033A1840044DCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13D1D782B3456CD6801B471 /* Pods-FlashCards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		813924152033A1840044DCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C40C2B091AA7A562EEB9BC /* Pods-FlashCardsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashCards.app/FlashCards";
+			};
+			name = Debug;
+		};
+		813924162033A1840044DCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFBCB0525B2CCF4A7395A41 /* Pods-FlashCardsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashCards.app/FlashCards";
+			};
+			name = Release;
+		};
+		813924182033A1840044DCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921F9D4EDCFE6AFFB141FE02 /* Pods-FlashCardsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlashCards;
+			};
+			name = Debug;
+		};
+		813924192033A1840044DCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D8C7892A77411B010D839C /* Pods-FlashCardsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X742YXLGQ3;
+				INFOPLIST_FILE = FlashCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QI.FlashCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlashCards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		813923E12033A1840044DCD6 /* Build configuration list for PBXProject "FlashCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8139240F2033A1840044DCD6 /* Debug */,
+				813924102033A1840044DCD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813924112033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813924122033A1840044DCD6 /* Debug */,
+				813924132033A1840044DCD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813924142033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813924152033A1840044DCD6 /* Debug */,
+				813924162033A1840044DCD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813924172033A1840044DCD6 /* Build configuration list for PBXNativeTarget "FlashCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813924182033A1840044DCD6 /* Debug */,
+				813924192033A1840044DCD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		813923F02033A1840044DCD6 /* FlashCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				813923F12033A1840044DCD6 /* FlashCards.xcdatamodel */,
+			);
+			currentVersion = 813923F12033A1840044DCD6 /* FlashCards.xcdatamodel */;
+			path = FlashCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 813923DE2033A1840044DCD6 /* Project object */;
+}
