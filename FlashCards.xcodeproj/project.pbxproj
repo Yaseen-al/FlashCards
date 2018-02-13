@@ -16,6 +16,7 @@
 		813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813923F52033A1840044DCD6 /* LaunchScreen.storyboard */; };
 		813924022033A1840044DCD6 /* FlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813924012033A1840044DCD6 /* FlashCardsTests.swift */; };
 		8139240D2033A1840044DCD6 /* FlashCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */; };
+		813924212033A56C0044DCD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813924202033A56B0044DCD6 /* GoogleService-Info.plist */; };
 		9D8F82A363C5153676C20FDC /* Pods_FlashCardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5EB4B9EA102C8F82DBC393 /* Pods_FlashCardsTests.framework */; };
 		B23DCF7F51C44CCFA8C347A6 /* Pods_FlashCardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0837B7B0E1882919430CD7 /* Pods_FlashCardsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		813924082033A1840044DCD6 /* FlashCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardsUITests.swift; sourceTree = "<group>"; };
 		8139240E2033A1840044DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813924202033A56B0044DCD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8B416A003B4DB9207C9E2329 /* Pods-FlashCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards.debug.xcconfig"; sourceTree = "<group>"; };
 		921F9D4EDCFE6AFFB141FE02 /* Pods-FlashCardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D8C7892A77411B010D839C /* Pods-FlashCardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,11 +141,13 @@
 		813923E82033A1840044DCD6 /* FlashCards */ = {
 			isa = PBXGroup;
 			children = (
+				813924222033A6390044DCD6 /* Views */,
 				8139241F2033A1C80044DCD6 /* Services */,
 				8139241E2033A1C20044DCD6 /* Models */,
 				8139241B2033A1A40044DCD6 /* Supporting Files */,
 				8139241D2033A1B90044DCD6 /* Controllers */,
 				813923ED2033A1840044DCD6 /* Main.storyboard */,
+				813924202033A56B0044DCD6 /* GoogleService-Info.plist */,
 				813923F82033A1840044DCD6 /* Info.plist */,
 				813923F02033A1840044DCD6 /* FlashCards.xcdatamodeld */,
 			);
@@ -198,6 +202,13 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		813924222033A6390044DCD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */,
+				813924212033A56C0044DCD6 /* GoogleService-Info.plist in Resources */,
 				813923F42033A1840044DCD6 /* Assets.xcassets in Resources */,
 				813923EF2033A1840044DCD6 /* Main.storyboard in Resources */,
 			);
@@ -475,15 +487,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
