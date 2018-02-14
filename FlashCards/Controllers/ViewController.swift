@@ -9,7 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func createTestUser(_ sender: UIButton) {
+        
+        AuthenticationService.createUser(email: "newSmile@sunshine.com", password: "wegwowego", completion: { (user) in
+            
+        }) { (error) in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

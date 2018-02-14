@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35y-xP-VUT">
+                                <rect key="frame" x="164.5" y="328.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="createTestUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqO-4O-0bH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="35y-xP-VUT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="a6w-2F-P5F"/>
+                            <constraint firstItem="35y-xP-VUT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l3Y-8f-9Ba"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
