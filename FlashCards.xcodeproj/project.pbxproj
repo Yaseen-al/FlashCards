@@ -23,6 +23,8 @@
 		8139242B2033B1F00044DCD6 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242A2033B1F00044DCD6 /* DataBaseService.swift */; };
 		8139242D2033B6320044DCD6 /* EndUser+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242C2033B6320044DCD6 /* EndUser+Extension.swift */; };
 		8139242F20348B2D0044DCD6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242E20348B2D0044DCD6 /* CoreDataHelper.swift */; };
+		817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */; };
+		817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */; };
 		9D8F82A363C5153676C20FDC /* Pods_FlashCardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5EB4B9EA102C8F82DBC393 /* Pods_FlashCardsTests.framework */; };
 		B23DCF7F51C44CCFA8C347A6 /* Pods_FlashCardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0837B7B0E1882919430CD7 /* Pods_FlashCardsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		8139242A2033B1F00044DCD6 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
 		8139242C2033B6320044DCD6 /* EndUser+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndUser+Extension.swift"; sourceTree = "<group>"; };
 		8139242E20348B2D0044DCD6 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Categroy.swift"; sourceTree = "<group>"; };
+		817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+EndUser.swift"; sourceTree = "<group>"; };
 		8B416A003B4DB9207C9E2329 /* Pods-FlashCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCards/Pods-FlashCards.debug.xcconfig"; sourceTree = "<group>"; };
 		921F9D4EDCFE6AFFB141FE02 /* Pods-FlashCardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D8C7892A77411B010D839C /* Pods-FlashCardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashCardsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashCardsUITests/Pods-FlashCardsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				8139242A2033B1F00044DCD6 /* DataBaseService.swift */,
+				817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */,
+				817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */,
 				8139242E20348B2D0044DCD6 /* CoreDataHelper.swift */,
 			);
 			path = DataBaseService;
@@ -543,6 +549,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */,
+				817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */,
 				8139242D2033B6320044DCD6 /* EndUser+Extension.swift in Sources */,
 				813923F22033A1840044DCD6 /* FlashCards.xcdatamodeld in Sources */,
 				813924242033ABB70044DCD6 /* Category+Extension.swift in Sources */,

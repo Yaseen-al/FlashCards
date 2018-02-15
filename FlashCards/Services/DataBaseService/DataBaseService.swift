@@ -22,4 +22,9 @@ class DataBaseService{
         categoryRef = dbRef.child("categories")
         cardsRef = dbRef.child("cards")
     }
+    func getDataBaseRef()->DatabaseReference{return dbRef}
+    func getUserRef()->DatabaseReference{return userRef}
+    func getCategoryRef()->DatabaseReference{return categoryRef}
+    func getCardsRef()->DatabaseReference{return cardsRef}
+ 
 }

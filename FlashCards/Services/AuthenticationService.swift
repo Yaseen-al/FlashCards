@@ -20,12 +20,12 @@ class AuthenticationService {
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error{
                 //TODO  handle the error
+                print("Dev: ",error)
             }
             if let user = user{
                 //TODO handle the user
                 let newEndUser = DataBaseService.manager.userRef.child(user.uid)
-                let managedObjectContext = CoreDataHelper.manager.managedObject
-                let endUser = EndUser(userName: "Sweedy", age: 12, nationality: "Hamayan", managedObjectContext: managedObjectContext)
+                let endUser = EndUser(userName: "Sweedy", age: 12, nationality: "Hamayan", userId: user.uid)
                 newEndUser.setValue(endUser.intoJSON())
             }
         }

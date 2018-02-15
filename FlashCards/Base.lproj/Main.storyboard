@@ -19,10 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35y-xP-VUT">
-                                <rect key="frame" x="164.5" y="328.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="118" y="328.5" width="139" height="30"/>
+                                <state key="normal" title="Create new Account"/>
                                 <connections>
                                     <action selector="createTestUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqO-4O-0bH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rl-C3-uNp">
+                                <rect key="frame" x="113" y="394" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create New Category"/>
+                                <connections>
+                                    <action selector="createNewCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNp-ga-qmK"/>
                                 </connections>
                             </button>
                         </subviews>
