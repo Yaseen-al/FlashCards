@@ -16,8 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
+        let homeFeedController = HomeFeedViewController()
+        let accountViewController = AccountViewController()
+        let accountNavController = UINavigationController(rootViewController: accountViewController)
+        let hoemNavController = UINavigationController(rootViewController: homeFeedController)
+        hoemNavController.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
+        accountNavController.tabBarItem = UITabBarItem(title: "Account", image: nil, selectedImage: nil)
+        let tabViewController = UITabBarController()
+        tabViewController.viewControllers = [hoemNavController, accountNavController]
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = tabViewController
+        window?.makeKeyAndVisible()
         return true
     }
     
