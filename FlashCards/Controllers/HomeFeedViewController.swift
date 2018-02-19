@@ -9,30 +9,28 @@
 import UIKit
 
 class HomeFeedViewController: UIViewController {
+    var categories = [Category](){
+        didSet{
+            self.homeFeedView.tableView.reloadData()
+        }
+    }
     let homeFeedView = HomeFeedView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
         setupHomeFeedView()
         configNavBar()
+        laodAllCategories()
     }
     func configNavBar(){
-        let listNavBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "list"), style: .plain, target: self, action: nil)
-        let addPostNavBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus-symbol"), style: .plain, target: self, action: nil)
+        let addPostNavBarButtonItem = UIBarButtonItem(title: "New Category", style: .done, target: self, action: nil)
         let logo = #imageLiteral(resourceName: "flashCard")
         let imageView = UIImageView(image:logo)
         imageView.contentMode = .scaleAspectFit
-        
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(logoIconButtonItemAction))
-//        tap.delegate = self
-//        imageView.isUserInteractionEnabled = true
-//        imageView.addGestureRecognizer(tap)
         self.navigationItem.titleView = imageView
         navigationItem.rightBarButtonItems = [addPostNavBarButtonItem]
         navigationController?.navigationBar.prefersLargeTitles = true
-//        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: Settings.manager.textColor]
         navigationItem.title = "Flash Cards"
-//        navigationController?.navigationBar.barTintColor = .orange
     }
     
     func setupHomeFeedView(){
@@ -40,6 +38,48 @@ class HomeFeedViewController: UIViewController {
         homeFeedView.snp.makeConstraints { (constraint) in
             constraint.edges.equalTo(view.snp.edges)
         }
+        homeFeedView.tableView.dataSource = self
+        homeFeedView.tableView.delegate = self
+    }
+    func laodAllCategories(){
+        DataBaseService.manager.retrieveAllCategories(completion: { [weak self](categoriesFromFireBase) in
+            self?.categories =  categoriesFromFireBase
+        }) { (error) in
+            print("Dev: error loading Categories \(error)")
+        }
     }
 
 }
+
+
+//MARK: TablView DataSource
+extension HomeFeedViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let categorySetup = categories[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell") else{
+            return UITableViewCell()
+        }
+        cell.textLabel?.text = categorySetup.title
+        return cell
+    }
+    
+    
+}
+//MARK: TablView Delegate
+extension HomeFeedViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let categorySetup = categories[indexPath.row]
+        let categoryCardsViewController = CategoryCardsViewController(category: categorySetup)
+        self.navigationController?.pushViewController(categoryCardsViewController, animated: true)
+    }
+}
+
+
+
+
+
+
