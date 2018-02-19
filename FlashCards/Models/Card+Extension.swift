@@ -9,6 +9,21 @@
 import Foundation
 extension Card{
     //TODO make a convenience intializers as well as to JSON functions
+    convenience init?(from jsonDict: [String: Any]){
+        self.init(context: CoreDataHelper.manager.managedObject)
+        guard let backBody = jsonDict["backBody"] as? String else{return}
+        guard let backImageURL = jsonDict["backImageURL"] as? String else{return}
+        guard let categoryName = jsonDict["categoryName"] as? String else{return}
+        guard let frontBody = jsonDict["frontBody"] as? String else{return}
+        guard let frontImageURL = jsonDict["frontImageURL"] as? String else{return}
+        guard let cardTitle = jsonDict["title"] as? String else{return}
+        self.backBody = backBody
+        self.backImageURL = backImageURL
+        self.categoryName = categoryName
+        self.frontBody = frontBody
+        self.frontImageURL = frontImageURL
+        self.cardTitle = cardTitle
+    }
     convenience init(backBody: String, backImageURL: String, categoryUID: String, frontBody: String, frontImage: String, title: String){
         self.init(context: CoreDataHelper.manager.managedObject)
         self.backBody = backBody

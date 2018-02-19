@@ -11,9 +11,14 @@ import Firebase
 enum UserDataBaseErrors: Error{
     case userDictError
     case noSignedUser
+    case categoryDictError
+    case cardDictError
+    case noCategoryId
+    case categoryDataBaseError
 }
 extension DataBaseService{
     func retrieveEndUser(completion: @escaping (EndUser)->Void, errorHandler: @escaping (Error)->Void) {
+        //this will make sure there is a signed in user and will handle it if there is no user signed in
         guard let user = AuthenticationService.getCurrentUser() else{
             errorHandler(UserDataBaseErrors.noSignedUser)
             return

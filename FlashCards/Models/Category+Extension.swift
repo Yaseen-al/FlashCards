@@ -13,9 +13,19 @@ extension Category{
         self.init(context: CoreDataHelper.manager.managedObject)
         guard let title = jsonDict["title"] as? String else{return}
         guard let creatorId = jsonDict["creatorId"] as? String else{return}
+        if let cardsDict = jsonDict["cards"] as? [String: String]{
+            for key in cardsDict.keys{
+                // convert the key into a card using the function from the card that takse cardId and returns card
+                DataBaseService.manager.retrieveCard(from: key, completion: { (card) in
+                    card.category = self
+                }, errorHandler: {print($0)})
+            }
+        }
+        if let categroyId = jsonDict["categoryId"] as? String{
+            self.categoryId = categroyId
+        }
         self.title = title
         self.creatorId = creatorId
-        
     }
     
     convenience init(title: String, user: User){

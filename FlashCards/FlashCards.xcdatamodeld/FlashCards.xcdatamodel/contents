@@ -28,7 +28,7 @@
     </entity>
     <elements>
         <element name="Card" positionX="178" positionY="27" width="128" height="178"/>
-        <element name="Category" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="118"/>
         <element name="EndUser" positionX="-108" positionY="216" width="128" height="133"/>
     </elements>
 </model>
