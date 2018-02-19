@@ -9,24 +9,37 @@
 import Foundation
 import Firebase
 import CoreData
-
+enum AuthenticationServiceErrors: Error{
+    case signInError
+}
 class AuthenticationService {
+    private init(){}
+    static let manager = AuthenticationService()
     //This function will get the current user
     static func getCurrentUser()->User?{
         return Auth.auth().currentUser
     }
     //This function will create a new user
-    static func createUser(email: String, password: String, completion: (User)->Void, errorHandler: (Error)->Void){
+    func createUser(email: String, password: String, completion: @escaping (User)->Void, errorHandler: @escaping (Error)->Void){
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error{
                 //TODO  handle the error
                 print("Dev: ",error)
+                errorHandler(error)
             }
             if let user = user{
-                //TODO handle the user
-                let newEndUser = DataBaseService.manager.userRef.child(user.uid)
-                let endUser = EndUser(userName: "Sweedy", age: 12, nationality: "Hamayan", userId: user.uid)
-                newEndUser.setValue(endUser.intoJSON())
+                completion(user)
+            }
+        }
+    }
+    //this function will signn in using an email and password
+    func signIn(email: String, password: String, completion: @escaping (User) -> Void, errorHandler: @escaping(Error)->Void) {
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let error = error {
+                print("Dev: \(error)")
+                errorHandler(AuthenticationServiceErrors.signInError)
+            } else if let user = user {
+                completion(user)
             }
         }
     }
