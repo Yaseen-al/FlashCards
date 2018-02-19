@@ -16,7 +16,7 @@ class AuthenticationService {
     private init(){}
     static let manager = AuthenticationService()
     //This function will get the current user
-    static func getCurrentUser()->User?{
+    func getCurrentUser()->User?{
         return Auth.auth().currentUser
     }
     //This function will create a new user
@@ -41,6 +41,15 @@ class AuthenticationService {
             } else if let user = user {
                 completion(user)
             }
+        }
+    }
+    //this function will sign the user out
+    func signout(errorHandler: @escaping(Error)->Void) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+            errorHandler(error)
         }
     }
     

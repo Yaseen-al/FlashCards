@@ -19,7 +19,7 @@ enum UserDataBaseErrors: Error{
 extension DataBaseService{
     func retrieveEndUser(completion: @escaping (EndUser)->Void, errorHandler: @escaping (Error)->Void) {
         //this will make sure there is a signed in user and will handle it if there is no user signed in
-        guard let user = AuthenticationService.getCurrentUser() else{
+        guard let user = AuthenticationService.manager.getCurrentUser() else{
             errorHandler(UserDataBaseErrors.noSignedUser)
             return
         }

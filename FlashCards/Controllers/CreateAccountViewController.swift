@@ -49,6 +49,7 @@ class CreateAccountViewController: UIViewController {
             let endUser = EndUser(userName: userName, age: 21, nationality: "Sweeedy", userId: user.uid)
             let newEndUser = DataBaseService.manager.userRef.child(user.uid)
             newEndUser.setValue(endUser.intoJSON())
+            self.navigationController?.popToRootViewController(animated: true)
         }) { (error) in
             print("Dev: error creating an account\(error)")
         }

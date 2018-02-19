@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Firebase
 class AccountViewController: UIViewController {
     let profileView = ProfileView()
     let signInView = SignInView()
@@ -18,8 +19,7 @@ class AccountViewController: UIViewController {
     }
     func configureViews(){
             DataBaseService.manager.retrieveEndUser(completion: { (endUserFromFireBase) in
-                
-                self.setupProfileView(endUser: endUserFromFireBase)
+                self.setupProfileView(endUser: endUserFromFireBase, user: AuthenticationService.manager.getCurrentUser()!)
             }, errorHandler: { (error) in
                 self.setupSignInView()
             })
@@ -55,6 +55,8 @@ extension AccountViewController: UITextFieldDelegate{
         AuthenticationService.manager.signIn(email: email, password: password, completion: { (user) in
             //TODO remove the sign in view and add the profile view
             print("Sign in successful")
+        self.signInView.removeFromSuperview()
+            self.configureViews()
         }) { (error) in
             //
             print("sign in error \(error)")
@@ -72,11 +74,23 @@ extension AccountViewController: UITextFieldDelegate{
 }
 //MARK: Profile 
 extension AccountViewController{
-    func setupProfileView(endUser: EndUser){
+    func setupProfileView(endUser: EndUser, user: User){
         view.addSubview(profileView)
         profileView.snp.makeConstraints { (constraint) in
             constraint.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
         }
-        profileView.configureProfileView(from: endUser)
+        let signOutNavigationBarButton = UIBarButtonItem(title: "Sign Out", style: .done, target: self, action: #selector(signOutBarButtonAction(_:)))
+        self.navigationItem.rightBarButtonItem  = signOutNavigationBarButton
+        profileView.configureProfileView(from: endUser, user: user)
+    }
+    
+    @objc func signOutBarButtonAction(_ sender: UIBarButtonItem){
+        AuthenticationService.manager.signout { (error) in
+            print("print error in signing out")
+            return
+        }
+        self.signInView.removeFromSuperview()
+        self.navigationItem.rightBarButtonItems = nil
+        self.configureViews()
     }
 }

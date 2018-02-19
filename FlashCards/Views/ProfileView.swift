@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ProfileView: UIView {
     lazy var profileBackGroundView: UIImageView = {
         let imageView = UIImageView()
@@ -37,6 +37,13 @@ class ProfileView: UIView {
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
+    lazy var userEmail: UILabel = {
+        let label = UILabel()
+        label.text = "email"
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.textColor = .white
+        return label
+    }()
     private func convertImageToBW(image:UIImage) -> UIImage {
         let filter = CIFilter(name: "CIPhotoEffectMono")
         // convert UIImage to CIImage and set as input
@@ -59,6 +66,7 @@ class ProfileView: UIView {
         setupProfileBackGroundView()
         setupProfileImageView()
         setupUserNameLabel()
+        setupUserEmailLabel()
     }
     private func setupProfileBackGroundView(){
         addSubview(profileBackGroundView)
@@ -82,11 +90,17 @@ class ProfileView: UIView {
             constraint.centerX.equalTo(snp.centerX)
         }
     }
-    func configureProfileView(from endUser: EndUser){
-        self.userNameLabel.text = endUser.userName
+    private func setupUserEmailLabel(){
+        addSubview(userEmail)
+        userEmail.snp.makeConstraints { (constraint) in
+            constraint.top.equalTo(userNameLabel.snp.bottom)
+            constraint.centerX.equalTo(userNameLabel.snp.centerX)
+        }
     }
-
-    
+    func configureProfileView(from endUser: EndUser, user: User){
+        self.userNameLabel.text = endUser.userName
+        self.userEmail.text = user.email
+    }
 }
 //to fix snp autolayout issue
 class roundedImageView: UIImageView {
