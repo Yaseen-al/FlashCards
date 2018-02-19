@@ -7,29 +7,25 @@
 //
 
 import UIKit
-
+import SnapKit
 class AccountViewController: UIViewController {
-
+    let signInView = SignInView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        // Do any additional setup after loading the view.
+        setupSignInView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupSignInView(){
+        view.addSubview(signInView)
+        signInView.snp.makeConstraints { (constraint) in
+            constraint.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
+        }
+        self.signInView.createNewAccountButton.addTarget(self, action: #selector(createNewAccountAction(sender:)), for: .touchUpInside)
+    }
+    //action for create new account
+    @objc func createNewAccountAction(sender: UIButton){
+        let createNewAccountViewController = CreateAccountViewController()
+        self.navigationController?.pushViewController(createNewAccountViewController, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
