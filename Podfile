@@ -6,6 +6,10 @@ target 'FlashCards' do
     use_frameworks!
     
     # Pods for FlashCards
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
     pod 'Toucan'
     pod 'SnapKit'
     pod 'Kingfisher'
