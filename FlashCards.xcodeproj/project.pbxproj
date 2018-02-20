@@ -21,7 +21,7 @@
 		8139242B2033B1F00044DCD6 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242A2033B1F00044DCD6 /* DataBaseService.swift */; };
 		8139242D2033B6320044DCD6 /* EndUser+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242C2033B6320044DCD6 /* EndUser+Extension.swift */; };
 		8139242F20348B2D0044DCD6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139242E20348B2D0044DCD6 /* CoreDataHelper.swift */; };
-		81693195203A914000F912C8 /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81693194203A914000F912C8 /* HomeFeedViewController.swift */; };
+		81693195203A914000F912C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81693194203A914000F912C8 /* HomeViewController.swift */; };
 		81693197203A93C300F912C8 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81693196203A93C300F912C8 /* HomeFeedView.swift */; };
 		81693199203A972D00F912C8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81693198203A972D00F912C8 /* AccountViewController.swift */; };
 		8169319B203B499500F912C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8169319A203B499500F912C8 /* SignInView.swift */; };
@@ -33,6 +33,8 @@
 		816931A7203B865800F912C8 /* CategoryCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931A6203B865800F912C8 /* CategoryCardsView.swift */; };
 		816931A9203B8D9B00F912C8 /* CreateNewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931A8203B8D9B00F912C8 /* CreateNewCategoryViewController.swift */; };
 		816931AB203B9AB400F912C8 /* CreateNewCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */; };
+		816931AD203BA29C00F912C8 /* CreateNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */; };
+		816931AF203BA2BE00F912C8 /* CreateNewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */; };
 		817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */; };
 		817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */; };
 		817C92AE20364609001D8D98 /* DataBaseService+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AD20364609001D8D98 /* DataBaseService+Card.swift */; };
@@ -80,7 +82,7 @@
 		8139242A2033B1F00044DCD6 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
 		8139242C2033B6320044DCD6 /* EndUser+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndUser+Extension.swift"; sourceTree = "<group>"; };
 		8139242E20348B2D0044DCD6 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
-		81693194203A914000F912C8 /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
+		81693194203A914000F912C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81693196203A93C300F912C8 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
 		81693198203A972D00F912C8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8169319A203B499500F912C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,8 @@
 		816931A6203B865800F912C8 /* CategoryCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardsView.swift; sourceTree = "<group>"; };
 		816931A8203B8D9B00F912C8 /* CreateNewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCategoryViewController.swift; sourceTree = "<group>"; };
 		816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCategoryView.swift; sourceTree = "<group>"; };
+		816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCardViewController.swift; sourceTree = "<group>"; };
+		816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCardView.swift; sourceTree = "<group>"; };
 		817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Categroy.swift"; sourceTree = "<group>"; };
 		817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+EndUser.swift"; sourceTree = "<group>"; };
 		817C92AD20364609001D8D98 /* DataBaseService+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Card.swift"; sourceTree = "<group>"; };
@@ -222,11 +226,12 @@
 		8139241D2033A1B90044DCD6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				81693194203A914000F912C8 /* HomeFeedViewController.swift */,
+				81693194203A914000F912C8 /* HomeViewController.swift */,
 				81693198203A972D00F912C8 /* AccountViewController.swift */,
 				816931A0203B54E200F912C8 /* CreateAccountViewController.swift */,
 				816931A4203B83BC00F912C8 /* CategoryCardsViewController.swift */,
 				816931A8203B8D9B00F912C8 /* CreateNewCategoryViewController.swift */,
+				816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				8169319E203B49E000F912C8 /* EndUserAccount.swift */,
 				816931A2203B5B6000F912C8 /* ProfileView.swift */,
 				816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */,
+				816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -582,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8169319F203B49E000F912C8 /* EndUserAccount.swift in Sources */,
+				816931AD203BA29C00F912C8 /* CreateNewCardViewController.swift in Sources */,
 				817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */,
 				817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */,
 				81693199203A972D00F912C8 /* AccountViewController.swift in Sources */,
@@ -599,11 +606,12 @@
 				81693197203A93C300F912C8 /* HomeFeedView.swift in Sources */,
 				816931A9203B8D9B00F912C8 /* CreateNewCategoryViewController.swift in Sources */,
 				8169319D203B49BE00F912C8 /* CreateNewAccountView.swift in Sources */,
+				816931AF203BA2BE00F912C8 /* CreateNewCardView.swift in Sources */,
 				8139242F20348B2D0044DCD6 /* CoreDataHelper.swift in Sources */,
 				813923EA2033A1840044DCD6 /* AppDelegate.swift in Sources */,
 				816931A3203B5B6000F912C8 /* ProfileView.swift in Sources */,
 				8139242B2033B1F00044DCD6 /* DataBaseService.swift in Sources */,
-				81693195203A914000F912C8 /* HomeFeedViewController.swift in Sources */,
+				81693195203A914000F912C8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeFeedViewController: UIViewController {
+class HomeViewController: UIViewController {
     var categories = [Category](){
         didSet{
             self.homeFeedView.tableView.reloadData()
@@ -68,7 +68,7 @@ class HomeFeedViewController: UIViewController {
 
 
 //MARK: TablView DataSource
-extension HomeFeedViewController: UITableViewDataSource{
+extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
     }
@@ -85,7 +85,7 @@ extension HomeFeedViewController: UITableViewDataSource{
     
 }
 //MARK: TablView Delegate
-extension HomeFeedViewController: UITableViewDelegate{
+extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let categorySetup = categories[indexPath.row]
         let categoryCardsViewController = CategoryCardsViewController(category: categorySetup)

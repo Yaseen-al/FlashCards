@@ -31,6 +31,15 @@ class CategoryCardsViewController: UIViewController {
         setupCategoryCardsView()
         loadCategoryCards()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        configNavBar()
+        loadCategoryCards()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        configNavBar()
+        loadCategoryCards()
+    }
     func setupCategoryCardsView(){
         view.addSubview(categoryCardsView)
         categoryCardsView.snp.makeConstraints { (constraint) in
@@ -40,7 +49,7 @@ class CategoryCardsViewController: UIViewController {
         categoryCardsView.tableView.delegate = self
     }
     func configNavBar(){
-        let createNewCardNavBarButtonItem = UIBarButtonItem(title: "New Card", style: .done, target: self, action: nil)
+        let createNewCardNavBarButtonItem = UIBarButtonItem(title: "New Card", style: .done, target: self, action: #selector(createNewCardNavBarButtonAction(_:)))
         let logo = #imageLiteral(resourceName: "flashCard")
         let imageView = UIImageView(image:logo)
         imageView.contentMode = .scaleAspectFit
@@ -49,21 +58,39 @@ class CategoryCardsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = self.category.title
     }
+    @objc func createNewCardNavBarButtonAction(_ sender: UIBarButtonItem){
+        guard AuthenticationService.manager.getCurrentUser() != nil else{
+            let alertController = UIAlertController(title: "Please sign in in order to Create new cards", message: "You can sign in from the account tab", preferredStyle: .alert)
+            let okAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAlertAction)
+            present(alertController, animated: true, completion: nil)
+            return
+        }
+        let createNewCardViewController = CreateNewCardViewController(category: category)
+        self.navigationController?.pushViewController(createNewCardViewController, animated: true)
+    }
     func loadCategoryCards() {
-        DataBaseService.manager.retrieveCategory(from: self.category.categoryId!, completion: { (category) in
-            guard let categoryCards = category.cards else {
+        DataBaseService.manager.retrieveCategory(from: self.category.categoryId!, completion: { (categoryFromFireBase) in
+            guard let categoryCardsFromFireBase = categoryFromFireBase.cards else {
                 return
             }
-            for card in categoryCards{
+            var cards = [Card](){
+                didSet{
+                    if cards.count == categoryCardsFromFireBase.count{
+                        self.categoryCards = cards
+                    }
+                }
+            }
+            for card in categoryCardsFromFireBase{
                 let cardConversion = card as! Card
-                self.categoryCards.append(cardConversion)
+                if !cards.contains(cardConversion){
+                    cards.append(cardConversion)
+                }
             }
         }) { (error) in
             print(error)
         }
     }
-
-    
 }
 
 //MARK: TablView DataSource
@@ -81,12 +108,12 @@ extension CategoryCardsViewController: UITableViewDataSource{
         return cell
     }
     
-
-
+    
+    
 }
 //MARK: TablView Delegate
 extension CategoryCardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
     }
 }
