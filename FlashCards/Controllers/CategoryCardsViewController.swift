@@ -114,6 +114,8 @@ extension CategoryCardsViewController: UITableViewDataSource{
 //MARK: TablView Delegate
 extension CategoryCardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let cardSetup = categoryCards[indexPath.row]
+        let cardViewController = CardViewController(card: cardSetup)
+        self.navigationController?.pushViewController(cardViewController, animated: true)
     }
 }

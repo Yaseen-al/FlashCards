@@ -79,6 +79,7 @@ extension HomeViewController: UITableViewDataSource{
             return UITableViewCell()
         }
         cell.textLabel?.text = categorySetup.title
+        cell.detailTextLabel?.text = "Number of Cards: \(categorySetup.cards?.count ?? 0 )"
         return cell
     }
     

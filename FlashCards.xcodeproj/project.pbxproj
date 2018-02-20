@@ -35,6 +35,8 @@
 		816931AB203B9AB400F912C8 /* CreateNewCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */; };
 		816931AD203BA29C00F912C8 /* CreateNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */; };
 		816931AF203BA2BE00F912C8 /* CreateNewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */; };
+		816931B1203BD1E200F912C8 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931B0203BD1E200F912C8 /* CardViewController.swift */; };
+		816931B5203BD25C00F912C8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931B4203BD25C00F912C8 /* CardView.swift */; };
 		817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */; };
 		817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */; };
 		817C92AE20364609001D8D98 /* DataBaseService+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AD20364609001D8D98 /* DataBaseService+Card.swift */; };
@@ -96,6 +98,8 @@
 		816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCategoryView.swift; sourceTree = "<group>"; };
 		816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCardViewController.swift; sourceTree = "<group>"; };
 		816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCardView.swift; sourceTree = "<group>"; };
+		816931B0203BD1E200F912C8 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		816931B4203BD25C00F912C8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Categroy.swift"; sourceTree = "<group>"; };
 		817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+EndUser.swift"; sourceTree = "<group>"; };
 		817C92AD20364609001D8D98 /* DataBaseService+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Card.swift"; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				816931A4203B83BC00F912C8 /* CategoryCardsViewController.swift */,
 				816931A8203B8D9B00F912C8 /* CreateNewCategoryViewController.swift */,
 				816931AC203BA29C00F912C8 /* CreateNewCardViewController.swift */,
+				816931B0203BD1E200F912C8 /* CardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				816931A2203B5B6000F912C8 /* ProfileView.swift */,
 				816931AA203B9AB400F912C8 /* CreateNewCategoryView.swift */,
 				816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */,
+				816931B4203BD25C00F912C8 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -588,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8169319F203B49E000F912C8 /* EndUserAccount.swift in Sources */,
+				816931B5203BD25C00F912C8 /* CardView.swift in Sources */,
 				816931AD203BA29C00F912C8 /* CreateNewCardViewController.swift in Sources */,
 				817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */,
 				817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */,
@@ -597,6 +604,7 @@
 				816931A1203B54E200F912C8 /* CreateAccountViewController.swift in Sources */,
 				813924242033ABB70044DCD6 /* Category+Extension.swift in Sources */,
 				813924262033ABCE0044DCD6 /* Card+Extension.swift in Sources */,
+				816931B1203BD1E200F912C8 /* CardViewController.swift in Sources */,
 				816931AB203B9AB400F912C8 /* CreateNewCategoryView.swift in Sources */,
 				813924282033AFAA0044DCD6 /* AuthenticationService.swift in Sources */,
 				816931A7203B865800F912C8 /* CategoryCardsView.swift in Sources */,
