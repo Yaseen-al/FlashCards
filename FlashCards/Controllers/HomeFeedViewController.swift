@@ -17,13 +17,17 @@ class HomeFeedViewController: UIViewController {
     let homeFeedView = HomeFeedView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
+        setupHomeFeedView()
+        configNavBar()
+        laodAllCategories()
+    }
+    override func viewWillAppear(_ animated: Bool) {
         setupHomeFeedView()
         configNavBar()
         laodAllCategories()
     }
     func configNavBar(){
-        let addPostNavBarButtonItem = UIBarButtonItem(title: "New Category", style: .done, target: self, action: nil)
+        let addPostNavBarButtonItem = UIBarButtonItem(title: "New Category", style: .plain, target: self, action: #selector(createNewCategoryAction(_:)))
         let logo = #imageLiteral(resourceName: "flashCard")
         let imageView = UIImageView(image:logo)
         imageView.contentMode = .scaleAspectFit
@@ -47,6 +51,17 @@ class HomeFeedViewController: UIViewController {
         }) { (error) in
             print("Dev: error loading Categories \(error)")
         }
+    }
+    @objc func createNewCategoryAction(_ sender: UIBarButtonItem){
+        guard AuthenticationService.manager.getCurrentUser() != nil else{
+                let alertController = UIAlertController(title: "Please sign in in order to Create new Categories", message: "You can sign in from the account tab", preferredStyle: .alert)
+                let okAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alertController.addAction(okAlertAction)
+                present(alertController, animated: true, completion: nil)
+            return
+        }
+        let createNewCategoryNavigationController = CreateNewCategoryViewController()
+        self.navigationController?.pushViewController(createNewCategoryNavigationController, animated: true)
     }
 
 }

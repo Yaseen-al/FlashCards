@@ -51,7 +51,7 @@ class CreateNewAccountView: UIView {
         let tf = UITextField()
         tf.borderStyle = .roundedRect
         tf.placeholder = "Username"
-        tf.layer.shadowOpacity = 0.8
+        tf.layer.shadowOpacity = 0.1
         tf.layer.shadowOffset = CGSize(width: 2, height: 2)
         return tf
     }()
@@ -59,7 +59,7 @@ class CreateNewAccountView: UIView {
         let tf = UITextField()
         tf.borderStyle = .roundedRect
         tf.placeholder = "Email"
-        tf.layer.shadowOpacity = 0.8
+        tf.layer.shadowOpacity = 0.1
         tf.layer.shadowOffset = CGSize(width: 2, height: 2)
         tf.keyboardType = .emailAddress
         return tf
@@ -68,7 +68,7 @@ class CreateNewAccountView: UIView {
         let tf = UITextField()
         tf.borderStyle = .roundedRect
         tf.placeholder = "Password"
-        tf.layer.shadowOpacity = 0.8
+        tf.layer.shadowOpacity = 0.1
         tf.layer.shadowOffset = CGSize(width: 2, height: 2)
         tf.isSecureTextEntry = true
         return tf
@@ -77,7 +77,7 @@ class CreateNewAccountView: UIView {
         let tf = UITextField()
         tf.borderStyle = .roundedRect
         tf.placeholder = "Confirm Password"
-        tf.layer.shadowOpacity = 0.8
+        tf.layer.shadowOpacity = 0.1
         tf.layer.shadowOffset = CGSize(width: 2, height: 2)
         tf.isSecureTextEntry = true
         return tf
@@ -90,7 +90,7 @@ class CreateNewAccountView: UIView {
         button.layer.cornerRadius = 10
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.8
+        button.layer.shadowOpacity = 0.1
         button.layer.shadowOffset = CGSize(width: 2, height: 2)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         return button

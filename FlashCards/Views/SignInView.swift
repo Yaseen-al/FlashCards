@@ -27,7 +27,7 @@ class SignInView: UIView {
         textField.borderStyle = .roundedRect
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
-        textField.layer.shadowOpacity = 0.8
+        textField.layer.shadowOpacity = 0.1
         textField.layer.shadowOffset = CGSize(width: 2, height: 2)
         textField.keyboardType = .emailAddress
         return textField
@@ -46,7 +46,7 @@ class SignInView: UIView {
         textField.borderStyle = .roundedRect
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .none
-        textField.layer.shadowOpacity = 0.8
+        textField.layer.shadowOpacity = 0.1
         textField.layer.shadowOffset = CGSize(width: 2, height: 2)
         textField.isSecureTextEntry = true
         return textField
@@ -64,8 +64,8 @@ class SignInView: UIView {
         button.backgroundColor = .white
         button.layer.cornerRadius = 10
         button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 0.8
+        button.layer.borderColor = UIColor.gray.cgColor
+        button.layer.shadowOpacity = 0.1
         button.layer.shadowOffset = CGSize(width: 2, height: 2)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         return button

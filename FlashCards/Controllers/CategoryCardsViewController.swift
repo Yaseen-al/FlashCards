@@ -40,12 +40,12 @@ class CategoryCardsViewController: UIViewController {
         categoryCardsView.tableView.delegate = self
     }
     func configNavBar(){
-        let addPostNavBarButtonItem = UIBarButtonItem(title: "New Card", style: .done, target: self, action: nil)
+        let createNewCardNavBarButtonItem = UIBarButtonItem(title: "New Card", style: .done, target: self, action: nil)
         let logo = #imageLiteral(resourceName: "flashCard")
         let imageView = UIImageView(image:logo)
         imageView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imageView
-        navigationItem.rightBarButtonItems = [addPostNavBarButtonItem]
+        navigationItem.rightBarButtonItems = [createNewCardNavBarButtonItem]
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = self.category.title
     }
