@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class CardViewController: UIViewController {
     var card: Card
     init(card: Card) {
@@ -36,7 +35,12 @@ class CardViewController: UIViewController {
         navigationItem.title = card.cardTitle
     }
     @objc func revealBarButtonItem(_ selector: UIBarButtonItem){
+        self.cardView.cardBackBody.alpha = 0
         self.cardView.cardBackBody.isHidden = false
+        UIView.animate(withDuration: 2.0, delay: 0.3, options: [.transitionCurlUp], animations: {
+               self.cardView.cardBackBody.alpha = 1
+        }, completion: nil)
+        
     }
     func setupCardView(){
         view.addSubview(cardView)
