@@ -10,7 +10,6 @@
 		0E0A69AFEE09546906567131 /* Pods_FlashCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F544856D1F104214DA9D5C /* Pods_FlashCards.framework */; };
 		813923EA2033A1840044DCD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813923E92033A1840044DCD6 /* AppDelegate.swift */; };
 		813923F22033A1840044DCD6 /* FlashCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 813923F02033A1840044DCD6 /* FlashCards.xcdatamodeld */; };
-		813923F42033A1840044DCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813923F32033A1840044DCD6 /* Assets.xcassets */; };
 		813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813923F52033A1840044DCD6 /* LaunchScreen.storyboard */; };
 		813924022033A1840044DCD6 /* FlashCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813924012033A1840044DCD6 /* FlashCardsTests.swift */; };
 		8139240D2033A1840044DCD6 /* FlashCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8139240C2033A1840044DCD6 /* FlashCardsUITests.swift */; };
@@ -37,6 +36,7 @@
 		816931AF203BA2BE00F912C8 /* CreateNewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */; };
 		816931B1203BD1E200F912C8 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931B0203BD1E200F912C8 /* CardViewController.swift */; };
 		816931B5203BD25C00F912C8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931B4203BD25C00F912C8 /* CardView.swift */; };
+		816931B9203CBA3200F912C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816931B8203CBA3200F912C8 /* Assets.xcassets */; };
 		817C92AA20360B71001D8D98 /* DataBaseService+Categroy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */; };
 		817C92AC20361611001D8D98 /* DataBaseService+EndUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */; };
 		817C92AE20364609001D8D98 /* DataBaseService+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C92AD20364609001D8D98 /* DataBaseService+Card.swift */; };
@@ -68,7 +68,6 @@
 		813923E62033A1840044DCD6 /* FlashCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813923E92033A1840044DCD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813923F12033A1840044DCD6 /* FlashCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlashCards.xcdatamodel; sourceTree = "<group>"; };
-		813923F32033A1840044DCD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813923F62033A1840044DCD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813923F82033A1840044DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813923FD2033A1840044DCD6 /* FlashCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +99,7 @@
 		816931AE203BA2BE00F912C8 /* CreateNewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewCardView.swift; sourceTree = "<group>"; };
 		816931B0203BD1E200F912C8 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		816931B4203BD25C00F912C8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		816931B8203CBA3200F912C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817C92A920360B71001D8D98 /* DataBaseService+Categroy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Categroy.swift"; sourceTree = "<group>"; };
 		817C92AB20361611001D8D98 /* DataBaseService+EndUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+EndUser.swift"; sourceTree = "<group>"; };
 		817C92AD20364609001D8D98 /* DataBaseService+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseService+Card.swift"; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 		8139241B2033A1A40044DCD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				816931B8203CBA3200F912C8 /* Assets.xcassets */,
 				813923E92033A1840044DCD6 /* AppDelegate.swift */,
-				813923F32033A1840044DCD6 /* Assets.xcassets */,
 				813923F52033A1840044DCD6 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -405,8 +405,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				813923F72033A1840044DCD6 /* LaunchScreen.storyboard in Resources */,
+				816931B9203CBA3200F912C8 /* Assets.xcassets in Resources */,
 				813924212033A56C0044DCD6 /* GoogleService-Info.plist in Resources */,
-				813923F42033A1840044DCD6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let accountViewController = AccountViewController()
         let accountNavController = UINavigationController(rootViewController: accountViewController)
         let hoemNavController = UINavigationController(rootViewController: homeFeedController)
-        hoemNavController.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
-        accountNavController.tabBarItem = UITabBarItem(title: "Account", image: nil, selectedImage: nil)
+        hoemNavController.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "homeLogo"), selectedImage: nil)
+        accountNavController.tabBarItem = UITabBarItem(title: "Account", image: #imageLiteral(resourceName: "userLogo"), selectedImage: nil)
         let tabViewController = UITabBarController()
         tabViewController.viewControllers = [hoemNavController, accountNavController]
         window = UIWindow(frame: UIScreen.main.bounds)
