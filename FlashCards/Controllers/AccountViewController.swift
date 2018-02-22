@@ -18,8 +18,8 @@ class AccountViewController: UIViewController {
         configureViews()
     }
     func configureViews(){
-            DataBaseService.manager.retrieveEndUser(completion: { (endUserFromFireBase) in
-                self.setupProfileView(endUser: endUserFromFireBase, user: AuthenticationService.manager.getCurrentUser()!)
+            DataBaseService.manager.retrieveEndUser(completion: { [weak self](endUserFromFireBase) in
+                self?.setupProfileView(endUser: endUserFromFireBase, user: AuthenticationService.manager.getCurrentUser()!)
             }, errorHandler: { (error) in
                 self.setupSignInView()
             })
