@@ -25,12 +25,13 @@ It is a Firebase powered application for creating and using flashcards.  Users a
 - A new flashcard will appear.
 - Extra Credit: Allow the user to mark whether or not they got the answer correct, and track their answers
 
+Criteria | Status
 :---|:---
-App uses Programmatic AutoLayout correctly for all iPhones in portrait | check
-Variable Naming and Readability | check
-App uses MVC Design Patterns | check
-App uses Firebase's Auth appropriately | check
-Users can see all categories for flashcards and create additional categories | check
-Users can create new flashcards  | check
-Users can quiz themselves on their flashcards | check
-Flashcard information is hosted on Firebase's Database | check
+App uses Programmatic AutoLayout correctly for all iPhones in portrait | done
+Variable Naming and Readability | done
+App uses MVC Design Patterns | done
+App uses Firebase's Auth appropriately | done
+Users can see all categories for flashcards and create additional categories | done
+Users can create new flashcards  | done
+Users can quiz themselves on their flashcards | done
+Flashcard information is hosted on Firebase's Database | done
